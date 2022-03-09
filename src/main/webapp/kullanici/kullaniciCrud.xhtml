@@ -15,7 +15,7 @@
 		<c:if test="#{!kullaniciIletisimController.panel}">
 			<p:menuitem value="#{labels.kullanicilar}" />
 		</c:if>
-
+  
 		<c:if test="#{kullaniciIletisimController.panel}">
 			<p:menuitem value="#{labels.kullanicilar}" action="#{kullaniciIletisimController.geri()}" update="kullaniciIletisimPanel,kullanici_form,breadcrump_form" />
 			<p:menuitem value="#{labels.iletisim_bilgileri}" />
